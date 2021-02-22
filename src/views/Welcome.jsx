@@ -36,6 +36,11 @@ const Welcome = (props) => {
     return (
         <Container fluid>
             <Row className="justify-content-center">
+                <Col lg={6}>
+                    <img src="assets/img/logo_db.png" className="img-fluid"/>
+                </Col>
+            </Row>
+            <Row className="justify-content-center">
                 <Col lg={4}>
                     <h1 className="text-center">WELCOME</h1>
 

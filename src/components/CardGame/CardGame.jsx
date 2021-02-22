@@ -9,17 +9,17 @@ const CardGame = (props) => {
     return (
         <div 
             onClick={() => {props.handleClickCard(props.position)}}
-            style={{backgroundColor:"#00F","height":"250px","width":"150px","display":"inline-block","margin":"5px 5px 5px 5px",color:"#FFF",fontSize: 15}}>
+            style={{"height":"250px","width":"150px","display":"inline-block","margin":"5px 5px 5px 5px",color:"#FFF",fontSize: 15}}>
             
             {
                 props.found ? 
-                    props.image
+                    <img src={"assets/img/"+props.image}></img>
                 :
                 (
                     props.state == STATE_SHOWING_CARD ?
-                        props.image
+                        <img src={"assets/img/"+props.image}></img>
                     :
-                    "&nbsp"
+                    <img src="assets/img/carta-parte-trasera.jpg"/>
                 )
             }
         </div>
